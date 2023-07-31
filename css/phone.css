@@ -1,0 +1,165 @@
+@media screen and (max-width: 555px) {
+    *{
+        position: relative;
+    }
+
+    /* Navigation */
+    #navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: fit-content;
+    }
+
+    #navbar .list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navbar .list ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navbar .list ul li{
+        list-style: none;
+        font-size: 1rem;
+        text-align: center;
+        padding: 5px 20px;
+    }
+
+    #navbar .list ul li a{
+        border-radius: 15%;
+        text-decoration-line: underline;
+        text-decoration-color: black;
+        text-decoration-style: solid;
+        text-decoration-thickness: 3px;
+    }
+
+    #logo img{
+        margin: -18px 2px;
+        width: 60px;
+    }
+    
+
+    /* Ḥome Section */
+    #home{
+        height: 700px;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+    }
+
+    /* Services Section */
+    #services{
+        display: flex;
+        flex-direction: column;
+        height: 610px;
+    }
+
+    #services-container::before{
+        content: "";
+        position: absolute;
+        height: 753px;
+        width: 100%;
+        background-color: rgba(255, 218, 185, 0.438);
+        z-index: -1;
+    }
+
+    #services .box{
+        border: 2px solid var(--theme-color);
+        width: fit-content;
+        height: auto;
+        padding: 10px;
+        margin: 10px 10px;
+        border-radius: 25px;
+        background-color: #8acff2;
+    }
+
+    #services .box img{
+        height: 100px;
+        display: block;
+        margin: auto;
+    }
+
+    /* Clients Section */
+    #clients{
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #clients img{
+        height: 110px;
+        padding: 15px;
+    }
+    
+    /* Contact Us Section */
+    #contact-box form{
+        width: 80%;
+    }
+
+    /* Utility Classes */
+    .h-primary{
+    font-size: 1.75rem;
+    margin: 0px;
+    padding: 8px;
+    color: black;
+    text-align: center;
+    text-decoration-style: solid;
+    text-decoration-line: underline;
+    text-decoration-color: var(--theme-color);
+    font-family: 'Bree Serif', serif;
+    }
+
+    .h-secondary{
+        font-size: 1.2rem;
+        padding: 2.5px;
+        color: black;
+        text-decoration-style: solid;
+        text-decoration-line: underline;
+        text-decoration-color: var(--theme-color);
+        font-family: 'Bree Serif', serif;
+        font-style: italic;
+    } 
+
+    .paragraph1{
+        color: white;
+        background-color: var(--theme-color);
+        font-weight: bold;
+        font-size: 0.7rem;
+        font-family: 'Bree Serif', serif;
+        text-align: center;
+    }
+
+    .paragraph2{
+        color: black;
+        font-weight: normal;
+        font-size: 0.7rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+
+    .btn{
+        padding: 6px 10px;
+        border: 2px solid black;
+        background-color: var(--theme-color);
+        color: white;
+        margin: 10px;
+        font-size: 0.9rem;
+        border-radius: 15%;
+        cursor: pointer;
+    }
+}
